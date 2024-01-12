@@ -31,31 +31,3 @@ export default createPosts;
 
 
 
-
-// import Text from '../models/textModel.js';
-
-
-// const createPost = async (req,res) => {
-    
-  
-//     const {id,text} = req.body;
-//     console.log(id);
-//     console.log(text);
-//     if(!id || !text )
-//     {
-//         return res.status(400).json({error: 'invalid payload'});
-//     }
-
-//     try{
-
-//         const text1 = new Text({id,text});
-//         await text1.save();
-
-//         return res.status(201).json({message: 'Text successfully stored'});
-//     } catch(error)
-//     {
-//         return res.status(500).json({ error: 'Internal Server Error' });
-//     }
-//  };
-
-//  export default createPost;
