@@ -1,19 +1,17 @@
+//To search for text from the database
 import findTextById from "../services/databaseService.js";
+//count the no of words and average word length
 import analyzeText from "../services/analyzeService.js";
-
+//Use of Redis for caching 
 import { getFromCache, addToCache } from "../services/cacheService.js";
 
 
 const getAnalysis = async (req, res) => {
     const textId = req.params.id;
-
     getFromCache(textId, async (err, cachedResult) => {
-
         if (cachedResult) {
             return res.status(200).json(cachedResult);
         } else {
-
-
             try {
                 const text1 = await findTextById(textId);
                 if (!text1) {
@@ -25,12 +23,10 @@ const getAnalysis = async (req, res) => {
                 addToCache(textId , analysisResult);
                 
                 return res.status(200).json(analysisResult);
-            }
-            catch (error) {
+            } catch (error) {
                 return res.status(500).json({ error: 'Internal Server Error' });
             }
         }
     });
 };
-
 export default getAnalysis;

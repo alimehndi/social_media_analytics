@@ -1,5 +1,6 @@
 import Text from '../models/textModel.js';
 
+//function to find text of the particuler given id
 const findTextById = async (textid) => {
      try {
         const text1 = await Text.findOne({ id: textid});

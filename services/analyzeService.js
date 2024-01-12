@@ -1,10 +1,7 @@
-function analyzeText(inputString) {
-
-
-    
+function analyzeText(inputString) {    
     // Remove leading and trailing whitespaces
     const trimmedString = inputString.trim();
-  
+    
     // Split the string into words
     const words = trimmedString.split(/\s+/);
   

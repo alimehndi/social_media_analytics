@@ -1,3 +1,4 @@
+// Data for the seeding purpose used for the testing the post api
 const texts =[
     {
         id:"1",
