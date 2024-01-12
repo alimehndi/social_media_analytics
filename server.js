@@ -25,10 +25,10 @@ const limiter = rateLimit({
 
 
 // POST /posts
-app.post('/posts', createPosts);
+app.post('/api/v1/posts/', createPosts);
 
 // GET /get/:id
-app.get('/get/:id', getAnalysis);
+app.get('/api/v1/posts/:id/analysis/', getAnalysis);
 
 
 app.listen(port, () =>

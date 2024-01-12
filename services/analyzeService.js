@@ -1,7 +1,7 @@
 function analyzeText(inputString) {
 
 
-    console.log(inputString);
+    
     // Remove leading and trailing whitespaces
     const trimmedString = inputString.trim();
   
