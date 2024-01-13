@@ -1,7 +1,12 @@
 //Used Redis for catching 
 import Redis from 'redis';
+import dotenv from 'dotenv';
 
-const redisClient = Redis.createClient(6379);
+dotenv.config();
+
+const redis_server = process.env.REDIS_SERVER_URL;
+
+const redisClient = Redis.createClient(redis_server);
 
 //function to get result if already stored in cache 
 const getFromCache = (key, callback) => {

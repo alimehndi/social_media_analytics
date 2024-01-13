@@ -31,8 +31,10 @@ A backend project used to get the Analytics of the text as no of words and avera
 Get the string and returns the total words count and average word length.
 
 #### How to Run ?
+
 ```http
    git clone <repo>
+   // Add environment variables
    npm install 
    npm start
 ```
