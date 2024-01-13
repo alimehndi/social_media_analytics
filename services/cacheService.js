@@ -6,7 +6,7 @@ dotenv.config();
 
 const redis_server = process.env.REDIS_SERVER_URL;
 
-const redisClient = Redis.createClient(redis_server);
+const redisClient = Redis.createClient(6379);
 
 //function to get result if already stored in cache 
 const getFromCache = (key, callback) => {
