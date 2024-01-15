@@ -49,7 +49,7 @@ Get the string and returns the total words count and average word length.
 #### seeder.js
  Used the seeder function to initially import the data to database for testing get API
  
-#### Successfully Deployed On RENDER Platform
+## Successfully Deployed On RENDER Platform
 
 #### POST
 ```http
@@ -61,10 +61,11 @@ Get the string and returns the total words count and average word length.
 ```http
 
    https://social-media-analytics-zxtg.onrender.com/api/v1/posts/{id}/analysis/
+
 ```
 
 
-#### Vedeo Link
+#### Video Link
 ```
    https://www.loom.com/share/ccb107e7f0744bc98e183a9b7780d237?sid=eb440633-dc2f-45d1-90f2-50ebad6d466a
 ```
